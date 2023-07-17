@@ -4,26 +4,26 @@ const estatistica = document.querySelectorAll("[data-estatistica]")
 const pecas = {
     "bracos": {
         "forca": 29,
-        "poder": 35,
-        "energia": -21,
-        "velocidade": -5
+        "poder": 0,
+        "energia": 0,
+        "velocidade": 0
     },
 
     "blindagem": {
-        "forca": 41,
+        "forca": 0,
         "poder": 20,
         "energia": 0,
-        "velocidade": -20
+        "velocidade": 0
     },
     "nucleos":{
         "forca": 0,
-        "poder": 7,
+        "poder": 0,
         "energia": 48,
-        "velocidade": -24
+        "velocidade": 0
     },
     "pernas":{
-        "forca": 27,
-        "poder": 21,
+        "forca": 0,
+        "poder": 0,
         "energia": -32,
         "velocidade": 42
     },
