@@ -35,14 +35,15 @@ const pecas = {
     }
 }
 
-function manipulaDados(operacao, controle) {
-    const peca = controle.querySelector("[data-contador]")
+function manipulaDados(operacao, contador) {
+    
+    const peca = contador.querySelector("[data-contador]")
 
     if(operacao === "-") {
         peca.value = parseInt(peca.value) - 1
-    } else {
+            } else {
         peca.value = parseInt(peca.value) + 1
-    }
+        }
 }
 
 controle.forEach( (elemento) => {
@@ -55,6 +56,8 @@ controle.forEach( (elemento) => {
 
 function atualizaEstatistica(peca) {
     estatistica.forEach( (elemento ) => {
-        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica];
+        elemento.textContent = parseInt(elemento.textContent) - pecas[controle][controle.dataset.estatistica];
+
     })
 }
